@@ -67,13 +67,13 @@ namespace Grades.Test.Types
             GradeBook book2 = book1;
 
             GiveBookAName(ref book2);
-            Assert.AreEqual("A GradeBook", book2.name);
+            Assert.AreEqual("A GradeBook", book2.Name);
         }
 
         private void GiveBookAName(ref GradeBook book)
         {
             book = new GradeBook();
-            book.name = "A GradeBook";
+            book.Name = "A GradeBook";
         }
 
 
@@ -105,9 +105,9 @@ namespace Grades.Test.Types
             GradeBook g2 = g1;
 
 
-            g1.name = "Scott's grade book";
+            g1.Name = "Scott's grade book";
 
-            Assert.AreEqual(g1.name, g2.name);
+            Assert.AreEqual(g1.Name, g2.Name);
         }
     }
 }
